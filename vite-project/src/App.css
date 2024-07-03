@@ -1,0 +1,101 @@
+body{
+  background-color: rgb(248, 248, 248);
+}
+.tudo{
+
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  height: 97vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.barraDePesquisa{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin:10px;
+}
+.button{
+  width: 100px;
+}
+
+form{
+  display: flex;
+}
+
+.quadrado{
+  background-color: white;
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #ffffff;
+  --button_outline_color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  margin: 0px;
+  padding: 0px;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
+.inputBusca {
+  width: 100%;
+  max-width: 220px;
+  height: 36px;
+  padding: 0px 6px;
+  border-radius: 12px;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.inputBusca:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.inputBusca:active {
+  transform: scale(0.95);
+}
+
+.inputBusca:focus {
+  border: 2px solid grey;
+}
