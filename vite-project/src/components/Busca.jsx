@@ -28,7 +28,7 @@ export default function Busca({ onSearch }) {
                     pattern="\d{8}"
                     required
                 />
-                <div className='button'> 
+                <div className=''> 
                 <button type="submit">
                     <span class="button_top"> Pesquisar</span>
                 </button>
